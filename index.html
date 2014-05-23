@@ -1,0 +1,96 @@
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<meta charset=utf-8 />
+<title>WORM</title>
+<style>
+	body{
+  background: #1B1B1B;
+}
+.control-elem {
+    border-radius: 50px; 
+    border: 2px solid #B3B4B3;
+    display: block;
+    float: left;
+    height: 12px;
+    margin: 0 4px 0 0;
+    width: 12px;
+    cursor: pointer;
+}
+.slider-control {
+    height: 16px;
+    left: 50%;
+    position: absolute;
+    top: 240px;
+}
+.worm{
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50px;
+  top: 0px;
+  left: 0px;
+}
+</style>
+</head>
+<body>
+  <div class="slider-control" style="width: 80px; margin-left: -40px;">
+    <div class="control-elem active"><div class="worm"></div></div>
+    <div class="control-elem "></div>
+    <div class="control-elem "></div>
+    <div class="control-elem "></div>
+  </div>
+  <script type="text/javascript" src="worm.js"></script>
+<script type="text/javascript">
+	
+// 	var WormRun, worm;
+
+// WormRun = (function() {
+//   function WormRun() {}
+
+//   WormRun.prototype.wormStep = function(stepFrom, stepTo) {
+//     var stepCount, wormPosEnd, wormPosStart, wormWidth;
+//     wormPosStart = stepFrom * 20;
+//     stepCount = stepTo - stepFrom;
+//     wormWidth = Math.abs(stepCount) * 20 + 16;
+//     wormPosEnd = stepCount * 20 + wormPosStart;
+//     if (stepCount > 0) {
+//       return $('.worm').animate({
+//         'width': wormWidth
+//       }, 400, function() {
+//         return $('.worm').animate({
+//           'width': 16 + 'px',
+//           'left': wormPosEnd + 'px'
+//         }, 400);
+//       });
+//     } else {
+//       return $('.worm').animate({
+//         'width': wormWidth,
+//         'left': wormPosEnd + 'px'
+//       }, 400, function() {
+//         return $('.worm').animate({
+//           'width': 16 + 'px'
+//         }, 400);
+//       });
+//     }
+//   };
+
+//   return WormRun;
+
+// })();
+
+// worm = new WormRun();
+
+// $(document).on('click', '.control-elem', function() {
+//   var activeIndex, targetIndex;
+//   activeIndex = $('.control-elem.active').index();
+//   targetIndex = $(this).index();
+//   $('.control-elem.active').removeClass('active');
+//   $(this).addClass('active');
+//   return worm.wormStep(activeIndex, targetIndex);
+// });
+
+</script>
+</body>
+</html>
