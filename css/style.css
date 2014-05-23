@@ -1,0 +1,28 @@
+body{
+  background: #1B1B1B;
+}
+.control-elem {
+    border-radius: 50px;
+    border: 2px solid #B3B4B3;
+    display: block;
+    float: left;
+    height: 12px;
+    margin: 0 4px 0 0;
+    width: 12px;
+    cursor: pointer;
+}
+.slider-control {
+    height: 16px;
+    left: 50%;
+    position: absolute;
+    top: 240px;
+}
+.worm{
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50px;
+  top: 0px;
+  left: 0px;
+}
